@@ -19,13 +19,18 @@
     <script src="{{ asset('assets')}}/js/html5shiv.js"></script>
     <script src="{{ asset('assets')}}/js/respond.min.js"></script>
     <![endif]-->
+
     <link rel="shortcut icon" href="{{ asset('assets')}}/images/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ asset('assets')}}/images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ asset('assets')}}/images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ asset('assets')}}/images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="{{ asset('assets')}}/images/ico/apple-touch-icon-57-precomposed.png">
 
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
     @yield('css')
+    @yield('headerjs')
+
 
 
 </head><!--/head-->
@@ -57,7 +62,7 @@
 @include('home._footer')
 @yield('footerjs')
 </body>
-
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="{{ asset('assets')}}/js/jquery.js"></script>
 <script src="{{ asset('assets')}}/js/bootstrap.min.js"></script>
 <script src="{{ asset('assets')}}/js/jquery.scrollUp.min.js"></script>

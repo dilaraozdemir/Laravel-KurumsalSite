@@ -75,6 +75,13 @@
                     </a>
 
                 </li>
+                <li class="nav-item">
+                    <a href="{{route('admin_faq')}}">
+                        <i class="fas fa-pen-square"></i>
+                        <p>FAQ</p>
+                    </a>
+
+                </li>
 
             </ul>
         </div>

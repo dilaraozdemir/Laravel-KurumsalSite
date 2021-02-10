@@ -100,7 +100,7 @@
                                 <li><a href="{{route('home_academic')}}" >Academics</a></li>
                                 <li><a href="{{route('home_references')}}" >References</a></li>
                                 <li><a href="{{route('home_contact')}}" >Contact</a></li>
-                                <li><a href="{{route('home_faq')}}" >Faq</a></li>
+                                <li><a href="{{route('home_faq')}}" >FAQ</a></li>
 								<li class="dropdown" ><a href="#" >Categories<i class="fa fa-angle-down"></i></a>
                                     <ul role="menu" class="sub-menu">
                                         @foreach($parentCategories as $rs)

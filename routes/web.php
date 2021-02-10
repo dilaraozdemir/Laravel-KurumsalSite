@@ -120,6 +120,28 @@ Route::middleware('auth')->prefix('myaccount')->namespace('myaccount')->group(fu
 Route::middleware('auth')->prefix('user')->namespace('user')->group(function () {
 
     Route::get('/profile', [UserController::class, 'index'])->name('userprofile');
+
+    //Content
+    Route::prefix('content')->group(function () {
+
+
+        Route::get('/', [\App\Http\Controllers\ContentController::class, 'index'])->name('user_content');
+        Route::get('create', [\App\Http\Controllers\ContentController::class, 'create'])->name('user_content_add');
+        Route::post('store', [\App\Http\Controllers\ContentController::class, 'store'])->name('user_content_store');
+        Route::post('update/{id}', [\App\Http\Controllers\ContentController::class, 'update'])->name('user_content_update');
+        Route::get('edit/{id}', [\App\Http\Controllers\ContentController::class, 'edit'])->name('user_content_edit');
+        Route::get('delete/{id}', [\App\Http\Controllers\ContentController::class, 'destroy'])->name('user_content_delete');
+        Route::get('show', [\App\Http\Controllers\ContentController::class, 'show'])->name('user_content_show');
+
+    });
+    //Image
+    Route::prefix('image')->group(function () {
+
+        Route::get('create/{content_id}', [\App\Http\Controllers\Admin\ImageController::class, 'create'])->name('user_image_add');
+        Route::post('store/{content_id}', [\App\Http\Controllers\Admin\ImageController::class, 'store'])->name('user_image_store');
+        Route::get('delete/{id}{content_id}', [\App\Http\Controllers\Admin\ImageController::class, 'destroy'])->name('user_image_delete');
+        Route::get('show', [\App\Http\Controllers\Admin\ImageController::class, 'show'])->name('user_image_show');
+    });
 });
 
 

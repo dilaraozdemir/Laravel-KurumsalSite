@@ -27,7 +27,8 @@ class FaqController extends Controller
      */
     public function create()
     {
-        //
+
+        return view('admin.faq_add');
     }
 
     /**
@@ -39,6 +40,15 @@ class FaqController extends Controller
     public function store(Request $request)
     {
         //
+        $data = new Faq;
+
+        $data->position = $request->input('position');
+        $data->question = $request->input('question');
+        $data->answer = $request->input('answer');
+        $data->status = $request->input('status');
+
+        $data->save();
+        return redirect()->route('admin_faq')->with('success','FAQ Saved Succesfuly');
     }
 
     /**
@@ -55,34 +65,49 @@ class FaqController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Faq  $faq
+     * @param \App\Models\Faq $faq
+     * @param $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Faq $faq)
+    public function edit(Faq $faq,$id)
     {
-        //
+        $data = Faq::find($id);
+        return view('admin.faq_edit', ['data' =>$data]);
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Faq  $faq
+     * @param \Illuminate\Http\Request $request
+     * @param \App\Models\Faq $faq
+     * @param $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Faq $faq)
+    public function update(Request $request, Faq $faq,$id)
     {
-        //
+        $data = Faq::find($id);
+
+        $data->position = $request->input('position');
+        $data->question = $request->input('question');
+        $data->answer = $request->input('answer');
+        $data->status = $request->input('status');
+
+        $data->save();
+        return redirect()->route('admin_faq')->with('success','FAQ Saved Succesfuly');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Faq  $faq
+     * @param \App\Models\Faq $faq
+     * @param $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Faq $faq)
+    public function destroy(Faq $faq,$id)
     {
-        //
+        $data = Faq::find($id);
+        $data->delete();
+
+        return redirect()->route('admin_faq')->with('success','FAQ Deleted Succesfuly');
     }
 }

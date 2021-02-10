@@ -1,5 +1,5 @@
 @extends('layouts.home')
-@section('title','User Profile')
+@section('title','My Reviews')
 
 @php
     $seting = \App\Http\Controllers\HomeController::getseting()
@@ -32,7 +32,7 @@
                     @foreach( $datalist as $rs)
                         <tr>
                             <td>{{ $rs->id }}</td>
-                            <td>{{$rs->content_id}}</td>
+                            <td><a href="{{route('icerik',['id'=>$rs->id,'content_id'=>$rs->content_id])}}">{{$rs->content_id}}</a></td>
                             <td>{{ $rs->subject }}</td>
                             <td>{{ $rs->review }}</td>
                             <td>{{ $rs->rate }}</td>

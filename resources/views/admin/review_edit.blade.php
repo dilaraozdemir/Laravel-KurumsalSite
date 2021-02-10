@@ -8,6 +8,7 @@
             <div class="page-inner">
                 <div class="page-header">
                     <h1>Edit Review</h1>
+                    @include('home.message')
                 </div>
                 <form class="card" role="form" action="{{ route('admin_review_update',['id'=>$data->id]) }}" method="post" enctype="multipart/form-data">
                         @csrf

@@ -20,7 +20,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title"><a href="{{route('myprofile')}}">My Profile</a></h4><br>
-                    <h4 class="panel-title"><a href="{{route('myprofile')}}">My Messages</a></h4><br>
+                    <h4 class="panel-title"><a href="{{route('user_content')}}">My Contents</a></h4><br>
                     <h4 class="panel-title"><a href="{{route('myreviews')}}">My Review</a></h4><br>
                     <h4 class="panel-title"><a href="{{route('myprofile')}}">My Settings</a></h4><br>
                 </div>
