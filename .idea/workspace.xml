@@ -2,9 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd982a8b-d392-4a63-811d-7c799363a0a5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/content_add.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/faq.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/kurumsalsite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kurumsalsite.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Actions/Fortify/CreateNewUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Actions/Fortify/CreateNewUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Actions/Fortify/UpdateUserProfileInformation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Actions/Fortify/UpdateUserProfileInformation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/jetstream.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/jetstream.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/home/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/api/api-token-manager.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/api/api-token-manager.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/two-factor-challenge.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/two-factor-challenge.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_categoryproducts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_categoryproducts.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_slider.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_slider.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/guest.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/guest.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile/delete-user-form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/delete-user-form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile/logout-other-browser-sessions-form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/logout-other-browser-sessions-form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile/update-profile-information-form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/update-profile-information-form.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,6 +178,8 @@
       <path value="$PROJECT_DIR$/vendor/jaybizzle/crawler-detect" />
       <path value="$PROJECT_DIR$/vendor/phar-io/version" />
       <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/vendor/jean85/pretty-package-versions" />
+      <path value="$PROJECT_DIR$/vendor/mongodb/mongodb" />
     </include_path>
   </component>
   <component name="ProjectId" id="1lHeTNPKlqEjQ0OVu3r3o5b8ZIY" />
@@ -152,12 +189,24 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mariadb&#10;mysql&#10;mongo" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Rhaenessa\PHP\project\kurumsalsite\public\assets\images\home" />
+      <recent name="D:\Rhaenessa\PHP\project\kurumsalsite\public\assets\admin\img" />
+      <recent name="D:\Rhaenessa\PHP\project\kurumsalsite\resources\views\home" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Rhaenessa\PHP\project\kurumsalsite\resources\views\admin" />
+      <recent name="D:\Rhaenessa\PHP\project\kurumsalsite\resources\views\home" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -176,7 +225,33 @@
       <workItem from="1607258451760" duration="1926000" />
       <workItem from="1610355992451" duration="2387000" />
       <workItem from="1610440017535" duration="11939000" />
-      <workItem from="1610464501334" duration="1342000" />
+      <workItem from="1610464501334" duration="1733000" />
+      <workItem from="1610526024177" duration="12801000" />
+      <workItem from="1611647486754" duration="11592000" />
+      <workItem from="1611740025015" duration="11777000" />
+      <workItem from="1612019529356" duration="8049000" />
+      <workItem from="1612090867330" duration="10991000" />
+      <workItem from="1612192509942" duration="5260000" />
+      <workItem from="1612260431546" duration="7798000" />
+      <workItem from="1612285852870" duration="4227000" />
+      <workItem from="1612363988157" duration="6395000" />
+      <workItem from="1612372527104" duration="312000" />
+      <workItem from="1612440273785" duration="21919000" />
+      <workItem from="1612524484199" duration="20320000" />
+      <workItem from="1612547205696" duration="71000" />
+      <workItem from="1612549227216" duration="202000" />
+      <workItem from="1612560086009" duration="5588000" />
+      <workItem from="1612569797810" duration="382000" />
+      <workItem from="1612570210761" duration="662000" />
+      <workItem from="1612615128625" duration="16342000" />
+      <workItem from="1612637356291" duration="450000" />
+      <workItem from="1612650735284" duration="6543000" />
+      <workItem from="1612694384185" duration="14278000" />
+      <workItem from="1612735061894" duration="14517000" />
+      <workItem from="1612794005542" duration="7537000" />
+      <workItem from="1612902726761" duration="159000" />
+      <workItem from="1612908818884" duration="9919000" />
+      <workItem from="1612946496828" duration="7606000" />
     </task>
     <servers />
   </component>
@@ -184,10 +259,46 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="565" y="356" key="NewPhpFileDialog" timestamp="1610357486192">
+    <state x="356" y="111" key="#Inspections" timestamp="1611746841485">
       <screen x="0" y="0" width="1458" height="864" />
     </state>
-    <state x="565" y="356" key="NewPhpFileDialog/0.0.1458.864@0.0.1458.864" timestamp="1610357486192" />
+    <state x="356" y="111" key="#Inspections/0.0.1458.864@0.0.1458.864" timestamp="1611746841485" />
+    <state x="322" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1612747210613">
+      <screen x="0" y="0" width="1458" height="864" />
+    </state>
+    <state x="322" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1458.864@0.0.1458.864" timestamp="1612747210613" />
+    <state x="476" y="234" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1612366225229">
+      <screen x="0" y="0" width="1458" height="864" />
+    </state>
+    <state x="476" y="234" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1458.864@0.0.1458.864" timestamp="1612366225229" />
+    <state x="460" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1612958952847">
+      <screen x="0" y="0" width="1458" height="864" />
+    </state>
+    <state x="460" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1458.864@0.0.1458.864" timestamp="1612958952847" />
+    <state width="1415" height="224" key="GridCell.Tab.0.bottom" timestamp="1612754382353">
+      <screen x="0" y="0" width="1458" height="864" />
+    </state>
+    <state width="1415" height="224" key="GridCell.Tab.0.bottom/0.0.1458.864@0.0.1458.864" timestamp="1612754382353" />
+    <state width="1415" height="224" key="GridCell.Tab.0.center" timestamp="1612754382353">
+      <screen x="0" y="0" width="1458" height="864" />
+    </state>
+    <state width="1415" height="224" key="GridCell.Tab.0.center/0.0.1458.864@0.0.1458.864" timestamp="1612754382353" />
+    <state width="1415" height="224" key="GridCell.Tab.0.left" timestamp="1612754382352">
+      <screen x="0" y="0" width="1458" height="864" />
+    </state>
+    <state width="1415" height="224" key="GridCell.Tab.0.left/0.0.1458.864@0.0.1458.864" timestamp="1612754382352" />
+    <state width="1415" height="224" key="GridCell.Tab.0.right" timestamp="1612754382353">
+      <screen x="0" y="0" width="1458" height="864" />
+    </state>
+    <state width="1415" height="224" key="GridCell.Tab.0.right/0.0.1458.864@0.0.1458.864" timestamp="1612754382353" />
+    <state width="189" height="457" key="HiddenNamespacesPopup" timestamp="1611745839196">
+      <screen x="0" y="0" width="1458" height="864" />
+    </state>
+    <state width="189" height="457" key="HiddenNamespacesPopup/0.0.1458.864@0.0.1458.864" timestamp="1611745839196" />
+    <state x="565" y="356" key="NewPhpFileDialog" timestamp="1610529878840">
+      <screen x="0" y="0" width="1458" height="864" />
+    </state>
+    <state x="565" y="356" key="NewPhpFileDialog/0.0.1458.864@0.0.1458.864" timestamp="1610529878840" />
     <state x="246" y="77" key="SettingsEditor" timestamp="1607259161242">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
@@ -196,9 +307,25 @@
       <screen x="0" y="0" width="1458" height="864" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1458.864@0.0.1458.864" timestamp="1610464800813" />
+    <state x="573" y="205" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1612368066898">
+      <screen x="0" y="0" width="1458" height="864" />
+    </state>
+    <state x="573" y="205" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1458.864@0.0.1458.864" timestamp="1612368066898" />
+    <state x="439" y="31" width="579" height="801" key="find.popup" timestamp="1612366212934">
+      <screen x="0" y="0" width="1458" height="864" />
+    </state>
+    <state x="439" y="31" width="579" height="801" key="find.popup/0.0.1458.864@0.0.1458.864" timestamp="1612366212934" />
+    <state x="447" y="204" key="refactoring.ChangeSignatureDialog" timestamp="1612916742602">
+      <screen x="0" y="0" width="1458" height="864" />
+    </state>
+    <state x="447" y="204" key="refactoring.ChangeSignatureDialog/0.0.1458.864@0.0.1458.864" timestamp="1612916742602" />
     <state x="386" y="197" key="run.anything.popup" timestamp="1610464890479">
       <screen x="0" y="0" width="1458" height="864" />
     </state>
     <state x="386" y="197" key="run.anything.popup/0.0.1458.864@0.0.1458.864" timestamp="1610464890479" />
+    <state x="392" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1612098607064">
+      <screen x="0" y="0" width="1458" height="864" />
+    </state>
+    <state x="392" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1458.864@0.0.1458.864" timestamp="1612098607064" />
   </component>
 </project>
