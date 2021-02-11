@@ -33,9 +33,6 @@ class HomeController extends Controller
         return Review::where('content_id',$id)->average('rate');
     }
 
-
-
-
     public function contentlist($search)
     {
         $datalist = Content::where('title','like','%'.$search.'%')->get();
@@ -175,7 +172,7 @@ class HomeController extends Controller
         {
             $credentials = $request->only('email','password');
             if (Auth::attempt($credentials)){
-                return redirect()->intended('admin');
+                return redirect()->intended('home');
             }
             return back()->withErrors([
                 'email' => 'The provided credentials do not match our records.',

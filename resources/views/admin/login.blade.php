@@ -29,6 +29,7 @@
                     <div class="card">
                         <div class="card-body">
                             <h4 class="card-title">Login</h4>
+                            @include('home.message')
                             <form action="{{ route('admin_logincheck') }}" method="post" >
                                 @csrf
                                 <div class="form-group">

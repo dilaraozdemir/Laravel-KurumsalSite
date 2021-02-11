@@ -32,7 +32,7 @@
                     @foreach( $datalist as $rs)
                         <tr>
                             <td>{{ $rs->id }}</td>
-                            <td><a href="{{route('icerik',['id'=>$rs->id,'content_id'=>$rs->content_id])}}">{{$rs->content_id}}</a></td>
+                            <td><a href="{{route('icerik',['id'=>$rs->content->id,'content_id'=>$rs->content->id])}}">{{$rs->content->title}}</a></td>
                             <td>{{ $rs->subject }}</td>
                             <td>{{ $rs->review }}</td>
                             <td>{{ $rs->rate }}</td>
