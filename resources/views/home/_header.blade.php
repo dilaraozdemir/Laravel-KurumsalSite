@@ -104,8 +104,6 @@
 							<ul class="nav navbar-nav collapse navbar-collapse">
 								<li><a href="{{route('home')}}" >Home</a></li>
                                 <li><a href="{{route('home_aboutus')}}" >About Us</a></li>
-                                <li><a href="{{route('home_research')}}" >Research</a></li>
-                                <li><a href="{{route('home_academic')}}" >Academics</a></li>
                                 <li><a href="{{route('home_references')}}" >References</a></li>
                                 <li><a href="{{route('home_contact')}}" >Contact</a></li>
                                 <li><a href="{{route('home_faq')}}" >FAQ</a></li>

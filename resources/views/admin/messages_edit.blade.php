@@ -18,13 +18,16 @@
             <div class="page-inner">
                 <div class="page-header">
                     <h1>Message Detail</h1>
-                    @include('home.message')
+
                 </div>
                 <form class="card" role="form" action="{{ route('admin_message_update',['id'=>$data->id]) }}" method="post" enctype="multipart/form-data">
                         @csrf
                         <div class="card">
 
                             <div class="card-body">
+                                <div class="card-sub">
+                                    @include('home.message')
+                                </div>
                                 <table class="table mt-3">
                                     <tr>
                                         <th scope="col">ID</th><td>{{ $data->id }}</td>

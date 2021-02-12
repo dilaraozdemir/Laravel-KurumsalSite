@@ -40,9 +40,6 @@
                             <td>{{ $rs->created_at }}</td>
                             <td><a href="{{ route('user_review_delete', ['id' => $rs->id]) }}" onclick="return confirm('Delete. Are you sure?')">Delete</a></td>
 
-
-
-
                         </tr>
                     @endforeach
                     </tbody>
