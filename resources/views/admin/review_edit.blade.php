@@ -14,42 +14,40 @@
                         @csrf
                     <div >
                         <div class="card">
-                            <div class="card-header">
-                                <div class="card-title">Base Form Control</div>
-                            </div>
                             <div class="card-body">
 
+
                                 <div class="form-group">
-                                    <label>ID</label>
+                                    <label><strong>ID:   </strong></label>
                                     <span>{{$data->id}}</span>
                                 </div>
                                 <div class="form-group">
-                                    <label>User Name</label>
+                                    <label><strong>User Name:   </strong></label>
                                     <span>{{$data->user->name}}</span>
                                 </div>
                                 <div class="form-group">
-                                    <label>Content</label>
+                                    <label><strong>Content   </strong></label>
                                     <span>{{$data->content->title}}</span>
                                 </div>
                                 <div class="form-group">
-                                    <label>Subject</label>
+                                    <label><strong>Subject:   </strong></label>
                                     <span>{{$data->subject}}</span>
                                 </div>
                                 <div class="form-group">
-                                    <label>Review</label>
+                                    <label><strong>Review:   </strong></label>
                                     <span>{{$data->review}}</span>
                                 </div>
                                 <div class="form-group">
-                                    <label>Rate</label>
+                                    <label><strong>Rate:   </strong></label>
                                     <span>{{$data->rate}}</span>
                                 </div>
                                 <div class="form-group">
-                                    <label>Rate</label>
+                                    <label><strong>Date:   </strong></label>
                                     <span>{{$data->created_at}}</span>
                                 </div>
 
                                 <div class="form-group">
-                                    <label>Status</label>
+                                    <label><strong> Status</strong></label>
                                     <select name="status" class="form-control" id="exampleFormControlSelect1">
                                         <option selected="selected">{{$data->status}} </option>
                                         <option>True</option>

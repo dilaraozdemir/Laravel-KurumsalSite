@@ -62,16 +62,10 @@
                                         $userRoles = Auth::user()->roles->pluck('name');
                                     @endphp
 
-                                    @if($userRoles->contains('admin'))
-                                        <li><a href="{{ route('admin_home') }}"><i class="fa fa-user"></i> {{ Auth::user()->name }}</a>Role: {{ Auth::user()->roles->pluck('name') }} </li></a></li>
-                                        <li><a href="{{ route('myprofile') }}"><i class="fa fa-user"></i> My User Account</a></li>
-                                        <li><a href="{{ route('admin_logout') }}"><i class="fa fa-unlock"></i> Logout</a></li>
+                                    <li><a href=""><i class="fa fa-user"></i> {{ Auth::user()->name }}</a>Role: {{ Auth::user()->roles->pluck('name') }} </li>
+                                    <li><a href="{{ route('myprofile') }}"><i class="fa fa-user"></i> My User Account</a></li>
+                                    <li><a href="{{ route('admin_logout') }}"><i class="fa fa-unlock"></i> Logout</a></li>
 
-                                    @elseif($userRoles->contains('user'))
-                                        <li><a href=""><i class="fa fa-user"></i> {{ Auth::user()->name }}</a>Role: {{ Auth::user()->roles->pluck('name') }} </li>
-                                        <li><a href="{{ route('myprofile') }}"><i class="fa fa-user"></i> My User Account</a></li>
-                                        <li><a href="{{ route('admin_logout') }}"><i class="fa fa-unlock"></i> Logout</a></li>
-                                    @endif
 
                                 @else
                                     <li><a href="{{ route('admin_login') }}"><i class="fa fa-lock"></i> Login</a></li>

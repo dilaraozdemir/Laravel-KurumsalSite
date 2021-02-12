@@ -37,14 +37,20 @@
 
     <div class="col-sm-5">
         <img src="{{Storage::url($data->image)}}" class="girl img-responsive">
-        <div class="col-sm-5">
+            <br> <br><br>
+        <h2 class="title text-center"> Image Gallery </h2>
 
-            <div class="media commnets">
                 @foreach($datalist as $rs)
-                        <img class="media-object" src="{{Storage::url($rs->image)}}" alt=""/>
+                    <div class="col-sm-6">
+                                <div class="productinfo text-center">
+                                    <tr>
+                                        <td><img  src="{{Storage::url($rs->image)}}" alt=""/></td>
+                                    <tr>
+                                </div>
+                            <br>
+                    </div>
                 @endforeach
 
-            </div>
 
     </div>
         </div>
@@ -79,11 +85,12 @@
 
 
                     <div class="post-meta">
-                        <i class="fa-star @if($rs->rate<1) -o empty @endif"></i>
-                        <i class="fa-star @if($rs->rate<2) -o empty @endif"></i>
-                        <i class="fa-star @if($rs->rate<3) -o empty @endif"></i>
-                        <i class="fa-star @if($rs->rate<4) -o empty @endif"></i>
-                        <i class="fa-star @if($rs->rate<5) -o empty @endif"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="@if($rs->rate<1) fa fa-star  @endif"></i>
+                        <i class="@if($rs->rate<2) fa fa-star @endif"></i>
+                        <i class="@if($rs->rate<3) fa fa-star  @endif"></i>
+                        <i class="@if($rs->rate<4) fa fa-star  @endif"></i>
+                        <i class="@if($rs->rate<5) fa fa-star  @endif"></i>
 
                     </div>
 

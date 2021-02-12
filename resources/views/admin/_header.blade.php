@@ -48,13 +48,19 @@
                 <li class="nav-item dropdown hidden-caret">
                     <a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false">
                         <div class="avatar-sm">
-                            <img src="{{ asset('assets')}}/admin/img/profile.jpg" alt="..." class="avatar-img rounded-circle">
+                            @if(Auth::user()->profile_photo_path)
+                                <img src="{{ Storage::url(Auth::user()->profile_photo_path)}}" alt="..." class="avatar-img rounded-circle">
+                            @endif
                         </div>
                     </a>
                     <ul class="dropdown-menu dropdown-user animated fadeIn">
                         <li>
                             <div class="user-box">
-                                <div class="avatar-lg"><img src="{{ asset('assets')}}/admin/img/profile.jpg" alt="image profile" class="avatar-img rounded"></div>
+                                <div class="avatar-lg">
+                                    @if(Auth::user()->profile_photo_path)
+                                        <img src="{{ Storage::url(Auth::user()->profile_photo_path)}}" alt="image profile" class="avatar-img rounded">
+                                    @endif
+                                </div>
                                 <div class="u-text">
                                     <h4><a href="#" class="d-block">{{Auth::user()->name}}</a></h4>
                                     <p class="text-muted"><a href="#" class="d-block">{{Auth::user()->email}}</a></p><a href="profile.html" class="btn btn-rounded btn-danger btn-sm">View Profile</a>
@@ -64,10 +70,8 @@
                         <li>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="{{route('myprofile')}}">My Profile</a>
-                            <a class="dropdown-item" href="#">My Balance</a>
-                            <a class="dropdown-item" href="#">Inbox</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="{{route('admin_seting')}}">Setting</a>
+                            <a class="dropdown-item" href="{{route('admin_seting')}}">Settings</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="{{route('logout')}}"> Logout</a>
                         </li>

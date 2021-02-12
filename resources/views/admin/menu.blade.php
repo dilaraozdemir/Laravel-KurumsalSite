@@ -11,7 +11,7 @@
                 </div>
                 <div class="card">
                     <div class="card-header">
-                        <div class="card-title">Mebnu Table</div>
+                        <div class="card-title">Menu Table</div>
                     </div>
                     <div class="card-body">
                         <div class="card-sub">

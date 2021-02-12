@@ -6,36 +6,16 @@
         <div class="sidebar-content">
             <div class="user">
                 <div class="avatar-sm float-left mr-2">
-                    <img src="{{ asset('assets')}}/admin/img/profile.jpg" alt="..." class="avatar-img rounded-circle">
+                    @if(Auth::user()->profile_photo_path)
+                        <img src="{{ Storage::url(Auth::user()->profile_photo_path) }}" alt="..." class="avatar-img rounded-circle">
+                    @endif
                 </div>
                 <div class="info">
                     <a data-toggle="collapse" href="#collapseExample" aria-expanded="true">
 
                             <a href="#" class="d-block">{{Auth::user()->name}}</a>
-
-
                     </a>
-                    <div class="clearfix"></div>
-
-                    <div class="collapse in" id="collapseExample">
-                        <ul class="nav">
-                            <li>
-                                <a href="#profile" class="dropdown-item">
-                                    <span class="link-collapse">My Profile</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#edit" class="dropdown-item">
-                                    <span class="link-collapse">Edit Profile</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#settings" class="dropdown-item">
-                                    <span class="link-collapse">Settings</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                    <br>
                 </div>
             </div>
             <ul class="nav">
@@ -71,7 +51,7 @@
                 <li class="nav-item">
                     <a href="{{route('admin_review')}}">
                         <i class="fas fa-pen-square"></i>
-                        <p>Review</p>
+                        <p>Reviews</p>
                     </a>
 
                 </li>
@@ -79,6 +59,13 @@
                     <a href="{{route('admin_faq')}}">
                         <i class="fas fa-pen-square"></i>
                         <p>FAQ</p>
+                    </a>
+
+                </li>
+                <li class="nav-item">
+                    <a href="{{route('admin_users')}}">
+                        <i class="fas fa-pen-square"></i>
+                        <p>Users</p>
                     </a>
 
                 </li>
